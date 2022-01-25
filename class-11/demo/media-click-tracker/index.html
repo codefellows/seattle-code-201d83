@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A/V Demo</title>
+  <link rel="stylesheet" href="styles/app.css">
+  <link rel="stylesheet" href="styles/grid.css">
+</head>
+
+<body>
+  <header>
+    <h1>Audio Video Elements</h1>
+    <a href="goats.html">Click Tracking</a>
+  </header>
+  <div class="grid">
+    <div class="row-a column-ab media">
+      <h2 >Audio</h2>
+      <audio id="levees" src="assets/audio/levees.m4a" muted controls autoplay></audio>
+    </div>
+    <ul class="row-bc column-ab">
+      <h3>Common attributes to control playback of audio</h3>
+      <li>autoplay: Boolean; use sparingly</li>
+      <li>controls: provides playback controls to user</li>
+      <li>loop: Boolean; will play audio over and over</li>
+      <li>muted: Boolean; can use this to mute audio on page load</li>
+      <li>src: link to the audio source file</li>
+      <li>volume: Range of 0.0 (silent) to 1.0 (loudest)</li>
+      <button id="randomizer">Click this button to randomly adjust the volume</button>
+    </ul>
+    <div class="row-a column-cd media">
+      <h2 >Video</h2>
+      <video id="demi" src="assets/video/demi.mov" muted controls></video>
+    </div>
+    <ul class="row-bc column-cd">
+      <h3>Common attributes to control playback of video.</h3>
+      <li>autoplay: Boolean; use sparingly</li>
+      <li>controls: provides playback controls to user</li>
+      <li>height: MUST be an absolute value; no percentages!</li>
+      <li>muted: Boolean; can use this to mute audio on page load</li>
+      <li>poster: use an alternate image in place of the first frame before playback has been initialized</li>
+      <li>src: link to the video source file</li>
+      <li>volume: Range of 0.0 (silent) to 1.0 (loudest)</li>
+      <li>width: May be an absolute value or percentages</li>
+    </ul>
+  </div>
+  <script src="js/media.js"></script>
+</body>
+
+</html>

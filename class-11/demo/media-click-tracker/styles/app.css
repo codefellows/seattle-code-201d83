@@ -1,0 +1,17 @@
+body {
+  font-family: Helvetica, sans-serif;
+  background-color: #d3d3d3;
+}
+
+video, audio, img {
+  width: 80%;
+  max-height: 80%;
+  margin: auto;
+}
+
+.media {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
