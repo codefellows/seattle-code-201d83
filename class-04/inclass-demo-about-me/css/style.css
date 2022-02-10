@@ -1,0 +1,27 @@
+body {
+  background-color: lightgrey;
+}
+
+h1 {
+  font-size: 3em;
+  width: max-content;
+  margin: auto;
+  text-decoration: underline;
+}
+
+h2 {
+  font-size: 2em;
+  text-decoration: underline;
+  margin-left: 30px;
+}
+
+ol {
+  margin-left: 30px;
+  margin-top: 15px;
+  list-style-position: inside;
+  list-style-type: "🎵";
+}
+
+li {
+  font-size: 1.5em;
+}
