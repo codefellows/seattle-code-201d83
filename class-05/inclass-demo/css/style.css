@@ -1,0 +1,39 @@
+* {
+  background-color: lightgrey;
+}
+
+/* HEADER STYLING */
+
+
+/* FIGURE STYLING */
+article {
+  width: 80%;
+  margin: auto;
+  background-color: lightpink;
+}
+
+
+figure {
+  width: 50%;
+  background-color: lightcyan;
+  padding: 25px;
+  margin: auto;
+  margin-top: 50px;
+  display: inline-block;
+}
+
+figcaption {
+  background-color: inherit;
+}
+
+img {
+  width: 100%;
+}
+
+p {
+  display: inline-block;
+  width: 40%;
+  background-color: inherit;
+  font-family: Impact, Tahoma, serif;
+  font-size: 2vw;
+}
