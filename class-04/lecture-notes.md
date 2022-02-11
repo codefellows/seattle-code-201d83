@@ -50,30 +50,52 @@ The element is positioned relative to the viewport.
 
 ## Pair Programming Instructions
 
+### NAVIGATOR ROLE:
+
+Direct the *driver* with the following steps:
+
 On github.com:
 
-- Fork this Repository.
-- In GitHub, navigate to **YOUR COPY** of the forked repo. This will have your name followed by the name of the repo you forked.
-- Copy the link from the green button that says 'code'.
+- Tell the driver to fork your Repository.
+- In GitHub, navigate the driver to **THEIR COPY** of the forked repo. This will have the driver's name followed by the name of the repo they forked.
 
-In your terminal:
+``` js
+   driverGitHub/repo-name
+   forked from navigatorGitHub/repo-name
+```
 
-- cd into your Projects or 201 folder and use the command `git clone` followed by the link that you copied from GitHub
-  - This will clone down the repo on to your local machine
-- cd into the repo and use `code .` to open your VSCode
+- Direct the driver to copy the link from the green button that says 'code'.
 
-In VSCode:
+In the **driver's** terminal:
 
-- Update the function.js file following the instructions listed in the comments and save
+- Direct the driver to cd into Projects or 201 folder and use the command `git clone` followed by the link that you asked the driver to copy from GitHub
+  - This will clone down the repo on to the driver's local machine
+- Direct the driver to cd into the repo and use `code .` to open VSCode
 
-In your terminal:
+In the **driver's** VSCode:
 
-- Do an A-C-P and push your updated function.js file up to **YOUR COPY** of the forked repo.
+- Direct the driver to update your code.
 
-On GitHub.com:
+In the **driver's** terminal:
 
-- Navigate to the repo you forked and click on 'Pull Requests' in the options bar across the top of the screen.
+- Instruct the driver to do an A-C-P and push the modified file(s) up to the **DRIVER'S COPY** of the forked repo.
+
+Instruct the driver to return to GitHub.com:
+
+- Navigate the driver to the **DRIVER'S COPY** of the forked repo and have them click on 'Pull Requests' in the options bar across the top of the screen.
 - Below the heading that says Compare Changes, you will see a bar with two input fields. One says 'base' and one says 'compare'
-- Set base to the repo you **FORKED FROM**
-- Set compare to **YOUR REPO**
+- Set base to the repo the driver **FORKED FROM**
+- Set compare to **DRIVER'S COPY OF THE REPO**
 - Push the button to 'Create the Pull Request' and follow the directions on the next screen to 'Create Pull Request'
+
+### NAVIGATOR'S NEXT STEPS
+
+The Navigator will then do the following on GitHub.com:
+
+- Go to your repository and navigate to the 'Pull Requests' in the options bar across the top of the screen.
+- Click on the open 'Pull Request' that the **driver** initiated.
+- Review the pull request and then merge the changes.
+
+In the **navigators's** terminal:
+
+- cd into your repo and do a `git pull origin main` to pull down the accepted changes from the 'Pull Request'.
