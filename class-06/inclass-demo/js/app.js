@@ -15,13 +15,15 @@
 
 // STEP 1: WINDOW INTO THE DOM
 // 1 way - document.getElementById - method that will take a string for ID
-// 2nd - document.querySelector - method that takes in a string, id, class, element type
+// 2nd way - document.querySelector - method that takes in a  string of either an id, class, or element type
 
 let kittenSection = document.getElementById('kitten-profiles');
 
-console.log(kittenSection);
-console.dir(kittenSection);
+console.log(kittenSection); // html element
+console.dir(kittenSection); // element as a JS Object
 
+
+// ***** OBJECT LITERALS ********
 
 let frankie = {
   name: 'Frankie',
@@ -39,20 +41,28 @@ let frankie = {
 let jumper = {
   name: 'Jumper',
   age: 0,
-  interests: ['wet food', 'fish toys', 'cat nip'],
+  interests: ['dry food', 'crinkle toy', 'treats'],
   isGoodWithDogs: false,
   isGoodWithCats: true,
-  isGoodWithKids: true,
+  isGoodWithKids: false,
   photo: 'img/jumper.jpeg',
   getAge: function() {
     this.age = `${randomAge(3,12)} months`;
   }
 }
 
-// frankie.getAge();
-// jumper.getAge();
-
-console.log(frankie);
+let serena = {
+  name: 'Serena',
+  age: 0,
+  interests: ['dry food', 'crinkle toy', 'treats'],
+  isGoodWithDogs: true,
+  isGoodWithCats: false,
+  isGoodWithKids: false,
+  photo: 'img/serena.jpeg',
+  getAge: function() {
+    this.age = `${randomAge(3,12)} months`;
+  }
+}
 
 // helper function that gets a random age between 3-12 months
 function randomAge(min,max){
@@ -63,8 +73,11 @@ function randomAge(min,max){
 // ********* DOM MANIPULATION ***********
 
 // Step 1 - JS Needs a window into the DOM - normally listed at the top of the JS page
-
 // Step 2 - JS will create an element - document.createElement - method, string of the html element you want create
+// Step 3 - Give it context if needed (optional)
+// Step 4 - add it to the DOM
+
+// kitties will render themselves and add their information via render method.
 
 frankie.render = function() {
   // Step 2 - create the element
@@ -122,8 +135,43 @@ jumper.render = function() {
   kittenSection.appendChild(imgElem);
 }
 
+serena.render = function() {
+  // Step 2 - create the element
+  let h2Elem = document.createElement('h2');
+  // Step 3 - Give it context if needed (optional)
+  h2Elem.textContent = this.name;
+  // Step 4 - add it to the DOM -- parent.appendChild(child)
+  kittenSection.appendChild(h2Elem);
 
-let kittenCadboodle = [frankie, jumper];
+  let paraElem = document.createElement('p');
+  paraElem.textContent = `${this.name} is adorable and is ${this.age}.`
+  kittenSection.appendChild(paraElem);
+
+  let ulElem = document.createElement('ul')
+  kittenSection.appendChild(ulElem);
+
+  for(let i = 0; i < this.interests.length; i++){
+    let currentInterest = this.interests[i];
+    let liElem = document.createElement('li');
+    liElem.textContent = currentInterest;
+    ulElem.appendChild(liElem);
+  }
+
+  let imgElem = document.createElement('img');
+  imgElem.src = this.photo;
+  imgElem.alt = `${this.name} is adorable and is ${this.age}.`
+  kittenSection.appendChild(imgElem);
+}
+
+// frankie.getAge();
+// jumper.getAge();
+// serena.getAge()
+// frankie.render();
+// jumper.render();
+// serena.render();
+
+// can add all kitties to an array and use a helper function to call all of their methods
+let kittenCadboodle = [frankie, jumper, serena];
 
 function renderAllKittens() {
   for(let i = 0; i<kittenCadboodle.length; i++){
@@ -135,6 +183,4 @@ function renderAllKittens() {
 
 renderAllKittens();
 
-// frankie.render();
-// jumper.render();
 
