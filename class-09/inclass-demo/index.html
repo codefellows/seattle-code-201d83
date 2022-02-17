@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Adopt a Kitten</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Archivo&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <h1>🐾 Adopt a Kitten 🐾</h1>
+  </header>
+  <main>
+     <!-- Kitten form  -->
+     <form id="kitten-form">
+        <fieldset>
+          <legend>Basic Information</legend>
+          <label for="name">Name</label>
+          <input type="text" name="kittyName" id="name">
+
+          <label for="interests">Interests (separate with a comma)</label>
+          <input type="text" name="interests" id="interests">
+          <label for="photo">Photo</label>
+          <input type="text" id="photo" name="photo">
+        </fieldset>
+
+        <fieldset>
+          <legend>Placement information</legend>
+          <p>Can be placed with....</p>
+
+          <label for="isGoodWithCats">Is good with Cats</label>
+          <input id="isGoodWithCats" name="isGoodWithCats" type="checkbox">
+          <!-- <input id="maxCust" name="maxCust" > -->
+          <!-- event.target.maxCust.value -->
+
+          <label for="isGoodWithDogs">Is good with Dogs</label>
+          <input  id="isGoodWithDogs" name="isGoodWithDogs" type="checkbox">
+
+          <label for="isGoodWithKids">Is good with Kids</label>
+          <input id="isGoodWithKids" name="isGoodWithKids" type="checkbox">
+        </fieldset>
+        <button type="submit">Submit</button>
+     </form>
+
+    <h2>Kittens Available for Adoption</h2>
+    <section id="kitten-profiles"></section>
+
+  </main>
+  <footer>&copy; Code Fellows</footer>
+  <script src="js/app.js"></script>
+</body>
+
+</html>
