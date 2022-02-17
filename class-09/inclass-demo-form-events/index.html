@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Forms and Events</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1>Events: boxes and forms</h1>
+  </header>
+  <main>
+    <!-- <section id="container">
+      <h3>Click on a box below</h3>
+
+      <article id="box-one">Box 1</article>
+      <article id="box-two">Box 2</article>
+      <article id="box-three">Box 3</article>
+      <section id="results"></section>
+    </section> -->
+
+      <form id="my-form">
+        <fieldset>
+          <legend>Gives your fieldset some context</legend>
+
+          <!-- One way for inputs and labels ***for on label must match id on input ***-->
+          <label for="fullName">Full Name</label>
+          <input type="text" name="fullName" id="fullName">
+          <!-- event.target.fullName.value -->
+          <!-- input = {
+            <!-- fullName: Audrey Patterson -->
+          <!-- } -->
+
+          <!-- 2nd way  nesting your input in your label -->
+           <label> Age
+             <input type="number" name="age" required>
+             <!-- event.target.age.value -->
+           </label>
+
+           <label for="housewives">Fave housewives franchise?</label>
+           <select name="housewives" id="housewives">
+             <option value=""><---Pick One---></option>
+             <option value="slc">SLC</option>
+             <option value="bevHills">Beverly Hills</option>
+             <option value="none">None</option>
+           </select>
+        </fieldset>
+        <button type="submit">Submit</button>
+      </form>
+
+
+  </main>
+  <script src="js/app.js"></script>
+</body>
+</html>
