@@ -1,0 +1,50 @@
+.grid-container {
+  width: 90%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  /* grid-template-rows: 300px 100px; */
+  grid-auto-rows: minmax(200px, auto);
+
+  /* row-gap: 10px;
+  column-gap: 20px; */
+  /* gap: 30px;  shorthand if both column and gap are the same */
+  /* grid-template-areas:
+    "header header"
+    "sidebar  content"
+    "sidebar  content"
+    "sidebar  content2" */
+
+}
+
+.grid-item1{
+  /* grid-area: header; */
+  grid-column: 1/-1;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.grid-item2{
+  /* grid-area: sidebar; */
+  grid-row: 2/5;
+  display: flex;
+  flex-direction: column;
+}
+
+.grid-item3{
+  /* grid-area: content; */
+  grid-row: 2/4;
+}
+
+.grid-item4 {
+  /* grid-area: content2; */
+}
+
+
+.grid-container div {
+  border: 2px solid black;
+  font-size: 1.5em;
+  padding: 30px;
+
+}
