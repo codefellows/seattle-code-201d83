@@ -8,10 +8,10 @@ Before writing any code, take time to plan with your team. Make sure you are all
 
 ## Your pitch should include the following:
 
-1. [Group Agreement](https://codefellows.github.io/common_curriculum/projects/ProjectPrep1)
-1. [Idea Approval](https://codefellows.github.io/common_curriculum/projects/ProjectPrep2)
-1. [Tooling Creation](https://codefellows.github.io/common_curriculum/projects/ProjectPrep3)
-1. [Pitch Creation](https://codefellows.github.io/common_curriculum/projects/ProjectPrep4)
+1. [Group Agreement](https://codefellows.github.io/common_curriculum/projects/Project_Prep_1)
+1. [Idea Approval](https://codefellows.github.io/common_curriculum/projects/Project_Prep_2)
+1. [Tooling Creation](https://codefellows.github.io/common_curriculum/projects/Project_Prep_3)
+1. [Pitch Creation](https://codefellows.github.io/common_curriculum/projects/Project_Prep_4)
 
 ## Project Organization
 
