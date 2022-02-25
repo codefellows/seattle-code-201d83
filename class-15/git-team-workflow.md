@@ -1,4 +1,5 @@
-Git & GitHub Team Workflow
+# Git & GitHub Team Workflow
+
 =================
 
 ## When you start a new feature...
